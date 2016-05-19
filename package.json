@@ -1,0 +1,37 @@
+{
+  "name": "name",
+  "version": "0.0.1",
+  "description": "This my project",
+  "repository": "",
+  "author": "Jackalopy Dev Team <jackalopy@gmail.com>",
+  "dependencies": {
+    "gsap": "*"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-cache": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-clean-css": "*",
+    "gulp-notify": "*",
+    "gulp-nunjucks": "*",
+    "gulp-rename": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*"
+  },
+  "browser": {
+    "gsap-tween-lite": "./node_modules/gsap/src/uncompressed/TweenLite.js",
+    "gsap-jquery": "./node_modules/gsap/src/uncompressed/jquery.gsap.js",
+    "gsap-css-plugin": "./node_modules/gsap/src/uncompressed/plugins/CSSPlugin.js",
+    "gsap-scroll-to": "./node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js",
+    "gsap-draggable": "./node_modules/gsap/src/uncompressed/utils/Draggable.js"
+  }
+}

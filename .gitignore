@@ -54,6 +54,8 @@ jspm_packages
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
+.sass-cache
+.cordova
 
 # Directories potentially created on remote AFP share
 .AppleDB
