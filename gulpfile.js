@@ -21,16 +21,13 @@ var gulp = require("gulp"),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    browserify = require('browserify'),
-    source = require('vinyl-source-stream'),
-    buffer = require('vinyl-buffer'),
     del = require('del'),
     jade = require('gulp-jade'),
     DEBUG = true,
     PHP = false,
     WORDPRESS = false,
     JADE = true,
-    DEST_FOLDER = '../wp-content/themes/new-theme/';
+    DEST_FOLDER = './www/';
 
 // Default task
 gulp.task('default', ['clean'], function() {
@@ -59,7 +56,7 @@ if(PHP) gulp.task('templates', function() {
 // Scripts
 gulp.task('scripts', function() {
   gulp.src(['src/scripts/**/*.js', '!src/scripts/libraries/**/*.js'])
-    .pipe(babel())
+    .pipe(babel({presets: ["es2015"]}))
     .pipe(gulp.dest(DEST_FOLDER + "assets/js"))
     .on('end', function() {
         gulp.src('src/scripts/libraries/**/*.js')
